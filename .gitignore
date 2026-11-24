@@ -1,0 +1,12 @@
+# Build output
+target/
+bin/
+
+# Generated results (keep the sample's expected output)
+*.csv
+!dataset/SampleShop/expected_results.csv
+
+# OS / IDE noise
+.DS_Store
+Thumbs.db
+.metadata/

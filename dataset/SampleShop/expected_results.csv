@@ -1,0 +1,6 @@
+Source Class,Method,Current Class Similarity,Recommended Class,Recommended Class Similarity,Candidate Count,Shared Terms (Current),Shared Terms (Recommended),All Candidates
+com.sample.shop.Customer,getName(),0.2081,com.sample.shop.OrderItem,0.2391,2,name=0.208,name=0.239,com.sample.shop.OrderItem=0.2391; com.sample.shop.Inventory=0.2280
+com.sample.shop.Invoice,computeTax(),0.2874,com.sample.shop.Order,0.3558,1,tax=0.174; rate=0.068; order=0.045,order=0.097; calcul=0.093; total=0.093; rate=0.073,com.sample.shop.Order=0.3558
+com.sample.shop.Invoice,printCustomerContact(),0.1373,com.sample.shop.Customer,0.5595,4,custom=0.050; get=0.046; order=0.041,get=0.182; email=0.163; phone=0.163; name=0.051,com.sample.shop.Customer=0.5595; com.sample.shop.Order=0.3226; com.sample.shop.OrderItem=0.2234; com.sample.shop.Inventory=0.1605
+com.sample.shop.Order,formatShippingLabel(),0.3104,com.sample.shop.Customer,0.5152,1,custom=0.222; get=0.089,get=0.126; street=0.088; citi=0.088; zip=0.088; code=0.088,com.sample.shop.Customer=0.5152
+com.sample.shop.ReportGenerator,"summarizeStock(Inventory, String[])",0.0486,com.sample.shop.Inventory,0.7843,4,stock=0.049,warehous=0.176; reorder=0.176; need=0.119; stock=0.099; level=0.091,com.sample.shop.Inventory=0.7843; com.sample.shop.Customer=0.1694; com.sample.shop.OrderItem=0.1656; com.sample.shop.Order=0.0840
