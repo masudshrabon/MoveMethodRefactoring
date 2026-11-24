@@ -13,7 +13,7 @@ import java.util.List;
  * Entry point.
  *
  * Usage: java moveMethodRefactoring.Main [projectRoot] [outputCsv] [options]
- *   projectRoot  folder with the Java sources to analyse
+ *   projectRoot  folder with the Java sources to analyse (default: dataset/SampleShop)
  *   outputCsv    result file (default: move_method_suggestions.csv)
  * Options (all off by default = Algorithm 1 / Algorithm 3 as written):
  *   --margin=0.1        contextSim(m,Ci) must exceed contextSim(m,C) by this much
@@ -23,8 +23,8 @@ import java.util.List;
  */
 public final class Main {
 
-    private static final String DEFAULT_PROJECT =
-            "E:\\Dataset\\IndustrialProjects\\IB Java Projects Dataset\\atadWord2Xml";
+    /** The sample input project shipped with this repository (relative to the project folder). */
+    private static final String DEFAULT_PROJECT = "dataset/SampleShop";
     private static final String DEFAULT_OUTPUT = "move_method_suggestions.csv";
 
     private Main() {
